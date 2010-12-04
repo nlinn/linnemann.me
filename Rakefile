@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'jekyll'
+require 'ftp_sync'
 
 task :default => 'tags:generate_page'
 
@@ -69,7 +70,18 @@ title: Tags
  
     puts 'Done.'
  
+  end
 end
 
-end
+task :upload do
+  puts 'Upload _site to live server'
+  puts 'Please enter username: '
+  user = STDIN.gets.chomp
+  puts 'Please enter password: '
+  password = STDIN.gets.chomp
+  
+  ftp = FtpSync.new('www.linnemann.me', user, password)
+  ftp.sync('_site', '/')
 
+  puts "done."
+end
