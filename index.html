@@ -1,0 +1,19 @@
+---
+layout: default
+title: home
+---
+<h2>linnemann.me</h2>
+{% include about.html %}
+<h3>Recent posts</h3>
+<ul class="posts">
+{% for post in site.posts limit:5 %}
+  <li>
+    <span>{{ post.date | date_to_string }}:</span>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+<h3>Tags</h3>
+{% include tagcloud.html %}
+
+

@@ -1,0 +1,152 @@
+a {
+	color: #008000;
+}
+
+img {
+	border: 0;
+}
+
+body {
+	padding 0;
+	margin: 0;
+	color: #666; font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	line-height: 1.8;
+	font-size: 12px;
+}
+
+h2 {
+	margin: 0;
+}
+
+h2 span, h2 img {
+	vertical-align: middle;
+}
+
+#content, #footer {
+	margin: 0 auto;
+	width: 880px;
+}
+
+#footer {
+	margin-bottom: 30px;
+}
+
+#content {
+	background: #f6f6f6;
+	padding-bottom: 30px;
+	/*height: 800px;*/
+}
+
+#logo {
+	margin-top: 20px;
+	margin-right: 38px;
+	margin-bottom: 10px;
+	float: right;
+}
+
+
+.content_panel, .footer_panel {
+	margin: 0;
+  width: 500px; 
+	margin-left: 33px;
+	padding-left: 30px;
+	padding-right: 60px;
+  border: 2px solid #AAA;
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.content_panel {
+  padding-top: 20px;
+  min-height: 600px;
+}
+
+.footer_panel {
+  margin-top: 20px;
+  height: 50px;
+  margin-top: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.sidebar {
+  padding: 0 10px 0 20px;
+  margin: 0;
+  width: 220px;
+  float: right;
+/*  background: red; */
+
+}
+
+.sidebar_panel {
+  padding: 5px 0 20px 15px;
+  width: 185px;
+  border: 2px solid #aaa;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+
+.twitter_panel {
+  width: 230px;
+}
+
+.panel_big_middle {
+	margin: 0;
+	margin-left: 33px;
+	background: url('panel_big_middle.png');
+	background-repeat: repeat-y;
+	padding-left: 30px;
+	padding-right: 60px;
+}
+
+.panel_big_bottom {
+	margin: 0;
+	margin-left: 33px;
+}
+
+.by {
+	color: #bbb;
+}
+
+hr {
+	border: 0;
+	border-top: 1px #bbb solid;
+}
+
+pre {
+background-color:#EEEEFF;
+border:1px solid #DDDDDD;
+margin:20px 10px;
+overflow-x:auto;
+padding:0.4em;
+white-space:pre-wrap;
+word-wrap:break-word;
+}
+
+code, pre {
+  font-size:95%;
+  font:12px Monaco,sans-serif;
+}
+
+code {
+  background-color:#EEEEFF;
+  border:1px solid #DDDDDD;
+  padding:0 0.2em;
+}
+
+pre code {
+  border: 0;
+  padding: 0;
+}
+
+ul.post, ul.posts li {
+  list-style: none;
+}
+

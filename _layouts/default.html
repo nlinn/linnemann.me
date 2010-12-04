@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="google-site-verification" content="10asl5tvrWtvrZWdcRiCh_f4ICkx_CQwrlwG3ZRaVaA" />
+
+
+    <title>{{ page.title }}</title>
+    <link href='/css/sbd.css' rel='stylesheet' type='text/css' />
+    <link href='/css/pygmentize.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div id='content'>
+      <div id='logo'>
+
+        <a href='http://www.smallbydesign.de'>
+          <img src='/img/logo.png' />
+        </a>
+      </div>
+      <br clear='all' />
+      <div class='sidebar'>
+        {% if page.title != 'home' %}
+        <div class='sidebar_panel'>
+          <h3>linnemann.me</h3>
+          {% include about.html %}
+          <p>Check out older posts in my <a href="/archive.html">archives</a>.</p>
+
+          Tags: 
+          {% include tagcloud.html %}
+      </div>
+      {% endif %}
+    <div class="twitter_pane">
+  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+  <script>
+  new TWTR.Widget({
+    version: 2,
+    type: 'profile',
+    rpp: 5,
+    interval: 6000,
+    width: 202,
+    height: 300,
+    theme: {
+      shell: {
+        background: '#bbb',
+        color: '#fff'
+      },
+      tweets: {
+        background: '#ffffff',
+        color: '#000000',
+        links: '#008000'
+      }
+    },
+    features: {
+      scrollbar: false,
+      loop: false,
+      live: false,
+      hashtags: true,
+      timestamp: true,
+      avatars: false,
+      behavior: 'all'
+    }
+  }).render().setUser('nlinn').start();
+  </script>
+  </div>
+</div>
+        <div class='content_panel'>
+        {{ content }}
+        {{ testo }}
+      </div>
+      <div class='footer_panel'>
+        <strong>small<span class="by">by</span>design =&gt;</strong> <a href="http://www.smallbydesign.de">Home</a> | <a href="http://www.smallbydesign.de/ptmobile">ptMobile</a> | <a href="/">Blog</a> | <a href="/impressum">Impressum</a>
+      </div>
+    </div>
+    <div id='footer'>
+      &copy; 2010 small by design Internetdienste, Niels Linnemann
+    </div>
+  </body>
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-183377-3");
+		pageTracker._trackPageview();
+		</script>
+</html>

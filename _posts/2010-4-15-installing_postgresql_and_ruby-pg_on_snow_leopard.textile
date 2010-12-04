@@ -1,0 +1,27 @@
+---
+layout: post
+title: Installing postgreSQL and ruby-pg on Snow Leopard
+tags:
+- ruby
+- postgres
+- sequel
+---
+I tried to install  postgres as a local development db for a <a href="http://www.sinatrarb.com/">Sinatra</a>/<a href="http://sequel.rubyforge.org/">Sequel</a> project and it turned out to be no fun at all. It started with problems installing <a href="http://rubyforge.org/projects/ruby-pg">ruby-pg</a>: 
+
+bc. checking for pg_config... yes
+checking for libpq-fe.h... yes
+checking for libpq/libpq-fs.h... yes
+checking for PQconnectdb() in -lpq... no
+checking for PQconnectdb() in -llibpq... no
+checking for PQconnectdb() in -lms/libpq... no
+Can't find the PostgreSQL client library (libpq)
+
+After playing around with ENV and PATH-Settings and <code>ARCHFLAGS</code> the gem installation succeded &#8211; i&#8217;m not even sure what the problem was exactly. But when trying to connect from ruby I ran into the next problem telling me that still somethings is wrong with the gem (and yes, i&#8217;ve build it for x86_64): 
+
+bc.. /Library/Ruby/Gems/1.8/gems/pg-0.9.0/lib/pg_ext.bundle: dlopen(/Library/Ruby/Gems/1.8/gems/pg-0.9.0/lib/pg_ext.bundle, 9): no suitable image found.  Did find: (LoadError)
+
+/Library/Ruby/Gems/1.8/gems/pg-0.9.0/lib/pg_ext.bundle: mach-o, but wrong architecture - /Library/Ruby/Gems
+
+p. I have installed postgres with the <a href="http://www.enterprisedb.com/learning/pginst_guide.do">EnterpriseDB installer</a> for OS X in the first place and was able to solve my problems by uninstalling postgres and ruby-pg and by using <a href="http://mxcl.github.com/homebrew/">Homebrew</a> to install postgres. You have to do a little more db-configuration this way and you have to  install tools like pgAdmin on your own, but installing ruby-pg and connecting to my db from Sequel was no problem afterwards. 
+
+Hope that helps if you&#8217;re running into simular problems. Thanks to <a href="http://www.phoet.de/">Peter</a> for showing me Homebrew. 

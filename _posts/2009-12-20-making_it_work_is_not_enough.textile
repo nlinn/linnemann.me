@@ -1,0 +1,28 @@
+---
+title: Making it work is not enough
+layout: post
+tags:
+- clean code
+- development
+---
+!/img/wtf.png!
+
+I started with prototyping, added some features, did some releases and then took a break to look at my code. OMG!
+
+My job is working as an IT manager, so I’ve focused on team setup, agile processes and project management stuff for the last years and since it’s not part of my job I’m not coding for quite a while now.
+
+But if you stop coding you start losing the feeling for whats really going on. Don’t get me wrong, I’m reading books and articles, I’m listening to the intertubes and my development team and I know enough about the latest buzz to have my own opinion on it. And I’ve all the acronyms in place for a decent round of bullshit bingo. But after all there’s quite a difference in knowing something from reading and knowing from doing.
+
+I started ptMobile as my personal android pet project. I was getting my hands dirty again and was pleased to get my app working quickly.
+
+I’ve played around with the android sdk, learned how to use widgets, handlers, list adapters and that one should choose the appropriate layout manager carefully. The software is on the android market and has been downloaded over 200 times and is working quite well.
+
+Now, I’ve got a good feeling of how developing android apps feels like, but guess what: the codebase is a mess.
+It’s a mixture of snippets from different tutorials and “first version that worked” parts that lacks concept, beauty and test coverage. And it reminds me that I started writing a blog post with the title “how to build legacy systems from scratch” once ;-)
+
+h4. Clean Code
+
+So I grabbed myself the copy of Robert C. Martins “Clean Code” from our companies IT bookshelf. Everyone I talked about it told me that it was one of the most inspiring and useful books they’ve ever read, and I totally agree.
+
+The book says it’s not a “feel good” book and will make you work hard. I think I’ll give the work part a try and am curious where this will lead me – and my small project.
+

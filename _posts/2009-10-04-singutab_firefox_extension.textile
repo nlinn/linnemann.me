@@ -1,0 +1,35 @@
+---
+title: SinguTab Firefox Extension
+layout: post
+tags:
+- firefox
+- javascript
+- XUL
+---
+!/img/singutab.png!
+
+I was searching for a firefox extension that closes old tabs matching a specific URL, when a new tab with that URL is opened – ended up scripting it on my own.
+
+I have a swing application that delegates some workflows to a web project. It jumps to a number of URLs in that web project, opening them in the default web browser.
+
+{% highlight java %}
+// Java 6
+java.awt.Desktop.getDesktop().browse(new URI("http://www.your.url"));
+{% endhighlight %}
+
+The browser (firefox in my case) opens a new window/tab, everytime this method is called – so if you use it excessively, you have to close all these tabs by hand, otherwise you end up with a lot of useless zombie-tabs.
+
+One solution might be to close the tab automatically on the success page of a web flow. But what i was looking for is a firefox extension, that closes old tabs of this specific website everytime a new tab (containing this website) is openend – feels like “open url in same tab”, but that’s not exactly what it’s doing.
+
+I’m not that interested in firefox extensions, javascript, XUL and all that stuff, so i “compiled” a working extension from tutorials and code snippets.
+
+By now, you have to configure your URL pattern in the extensions source, but its peace of cake:
+
+# singutab.xpi is a zip archive, open that archive with your favorite unzipper
+# go to the folder chrome/content and open singutab.js
+# edit the first line: var myPattern = ‘google’; – replace google with anything that makes sense to you.
+
+Download: singutab.xpi (just drag the file into your firefox window to install)
+
+The default pattern is google, so with singutab installed you will only have one tab showing a google website at the same time.
+
