@@ -1,0 +1,30 @@
+---
+layout: post
+title: Simplified my blog with Jekyll
+tags:
+- ruby
+- jekyll
+- web
+---
+
+Today I replaced my "wordpress":http://www.wordpress.org blog with a bunch of static pages created with "jekyll":http://textile.thresholdstate.com/ and removed most of the outdated content. Besides the straightforward hosting of static pages, there are two things I like most about this approach:
+
+h4. 1. Offline writing and git
+
+Wordpress is a mature blogging system with many features but most of them are not necessary if you are a single user and especially if you are writing infrequently like I do.
+I enjoy using "my favourite text editor":http://code.google.com/p/macvim/ for writing instead of an online editor - I think most people do - and since I'm familiar with version control tools it feels just natural to use plain text files and "git":http://git-scm.com/ instead of a blog software specific content management approach.
+
+h4. 2. Playing around with layouts and templates is easy
+
+If you're fine with the wordpress theme you're using this might not bother you: I like to play around with the templates of my blog every now and then, but I'm not interested in php and definitly not interested in learning how the wordpress templating system works and running a wordpress test environment on my local computer. Jekyll comes with a local server and writing posts or playing around with templates or pages feels much like working with your favorite ruby web framework.
+
+Take a look at these pages if you're insterested in jekyll:
+
+# "jekyll at github":http://github.com/mojombo/jekyll
+# "linnemann.me sources on github":https://github.com/nlinn/linnemann.me
+# "Hendrik Nyh on jekyll":http://henrik.nyh.se/2009/04/jekyll
+# "Starting with Jekyll":http://asymmetrical-view.com/2009/05/14/starting-wtih-jekyll.html
+# "Publishing a blog with github and jekyll":http://blog.envylabs.com/2009/08/publishing-a-blog-with-github-pages-and-jekyll/
+# "Kester Dobson's posts tagged jekyll":http://www.justkez.com/tag/jekyll
+# "Alex Young on switching to jekyll":http://alexyoung.org/2009/07/09/new-blog/
+# "Textile Manual":http://textile.thresholdstate.com/
